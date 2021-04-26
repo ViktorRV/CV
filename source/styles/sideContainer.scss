@@ -28,6 +28,11 @@
     color: #fff;
     opacity: .5;
     margin-left: 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
   }
 
   ul {
@@ -41,9 +46,5 @@
     color: #FB6D3A;
     margin-right: 10px;
     font-size: 1.2em;
-  }
-
-  a[href^='tel:'] {
-    text-decoration: none;
   }
 }
