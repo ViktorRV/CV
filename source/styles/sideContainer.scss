@@ -1,0 +1,49 @@
+.side-container {
+  width: 370px;
+  background: #1E2939;
+  padding-top: 40px;
+
+  .portrait {
+    overflow: hidden;
+    background-image: url('../images/portrait.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: 400px;
+  }
+  .sidebar-content-section {
+    padding: 30px;
+    color: white;
+    line-height: 1.5em;
+
+    h3 {
+      font-size: 1.5em;
+      line-height: 27px;
+      margin: 0;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+  }
+
+  a, a:active, a:visited {
+    color: #fff;
+    opacity: .5;
+    margin-left: 10px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: #FB6D3A;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+
+  a[href^='tel:'] {
+    text-decoration: none;
+  }
+}
