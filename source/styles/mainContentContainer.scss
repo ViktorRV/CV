@@ -1,0 +1,88 @@
+.cv-content-container {
+  padding: 40px;
+  width: 100%;
+  .about-me-section {
+    margin-bottom: 30px;
+    .about-me-name {
+      text-align: center;
+      font-size: 45px;
+      line-height: 55px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    
+    .about-me-profession {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 2em;
+      text-transform: capitalize;
+    }
+    
+    .about-me-description {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      margin: 0;
+      text-align: justify;
+    }
+  }
+}
+
+.work-experience-section {
+  margin-bottom: 50px;
+  font-size: 1.2em;
+}
+.work-experience-section-header,
+.education-section-header {
+  font-size: 1.8em;
+  line-height: 2.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.company,
+.university {
+  color: #FB6D3A;
+}
+
+.date {
+  font-size: .8em;
+  line-height: 15px;
+  color: #A8A8A8;
+}
+
+.workplace {
+  margin-bottom: 20px;
+}
+
+/* education section */
+.university {
+  margin-bottom: 12px;
+}
+
+.separator {
+  margin: 0 7px;
+  color: black;
+}
+
+.resps {
+  .highlight {
+    color: #FB6D3A;
+    font-weight: bold;
+  }
+}
+
+.resps-list {
+  font-size: .9em;
+  line-height: 1.5em;
+  list-style: none;
+  li {
+    &::before {
+      margin-right: 10px;
+      content: "\2022";
+      color: #FB6D3A;
+      font-size: 1.2em;
+    }
+  }
+}

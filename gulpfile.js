@@ -85,8 +85,14 @@ gulp.task('copy:images', function () {
         .pipe(gulp.dest('dist/images'));
 });
 
+/* ------------ Copy favicon ------------- */
+gulp.task('copy:favicon', function () {
+    return gulp.src('./source/*.ico')
+        .pipe(gulp.dest('dist/'));
+});
+
 /* ------------ Copy ------------- */
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:favicon'));
 
 /* ------------ Watchers ------------- */
 gulp.task('watch', function () {

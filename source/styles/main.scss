@@ -4,7 +4,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 800;
+  font-weight: bold;
   margin: 0;
   padding: 0;
 }
@@ -30,3 +30,4 @@ ol, ul {
 }
 
 @import "./sideContainer.scss";
+@import "./mainContentContainer.scss";
