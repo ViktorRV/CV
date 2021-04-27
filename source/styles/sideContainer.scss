@@ -1,5 +1,5 @@
 .sidebar-container {
-  background: #1E2939;
+  background: $sidebarBgColor;
   padding-top: 20px;
   letter-spacing: .5px;
   @media screen and ($breakpointSmall) {
@@ -7,10 +7,24 @@
     padding-top: 40px;
   }
 
+  @media print {
+    background-color: white;
+    padding: 0;
+  }
+
   a {
     color: #ccc;
+    text-decoration: none;
     &:hover {
       color: $orangeHighlight;
+    }
+    
+  }
+
+  .sidebar-content-container {
+    @media print {
+      display: flex;
+      flex-direction: row;
     }
   }
 
@@ -23,6 +37,9 @@
     @media screen and ($breakpointSmall) {
       display: none;
     }
+    @media print {
+      color: black;
+    }
   }
   
   .portrait {
@@ -31,8 +48,13 @@
     background-position: bottom;
     background-size: cover;
     height: 420px;
+    -webkit-print-color-adjust: exact; 
     @media screen and ($breakpointMedium) {
       height: 450px;
+    }
+    @media print {
+      height: 170px;
+      min-width: 150px;
     }
   }
   .sidebar-content-section {
@@ -55,6 +77,16 @@
 
     @media screen and ($breakpointMedium) {
       padding: 30px;
+    }
+
+    @media print {
+      color: black;
+      font-size: 1em;
+      line-height: 1.5em;
+      a {
+        color: black;
+        text-decoration: none;
+      }
     }
   }
 }
