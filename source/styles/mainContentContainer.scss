@@ -1,6 +1,9 @@
 .cv-content-container {
   padding: 40px;
   width: 100%;
+  h4, a {
+    color: #FB6D3A;
+  }
   .about-me-section {
     margin-bottom: 30px;
     .about-me-name {
@@ -30,21 +33,17 @@
 }
 
 .work-experience-section,
-.education-section {
-  margin-bottom: 50px;
+.education-section,
+.additional-info-section {
   font-size: 1.2em;
 }
 .work-experience-section-header,
-.education-section-header {
+.education-section-header,
+.additional-info-header {
   font-size: 1.8em;
   line-height: 2.2em;
   margin-bottom: 10px;
   font-weight: bold;
-}
-
-.company,
-.university {
-  color: #FB6D3A;
 }
 
 .date {
@@ -65,25 +64,4 @@
 .separator {
   margin: 0 7px;
   color: black;
-}
-
-.resps {
-  .highlight {
-    color: #FB6D3A;
-    font-weight: bold;
-  }
-}
-
-.resps-list {
-  font-size: .9em;
-  line-height: 1.5em;
-  list-style: none;
-  li {
-    &::before {
-      margin-right: 10px;
-      content: "\2022";
-      color: #FB6D3A;
-      font-size: 1.2em;
-    }
-  }
 }

@@ -5,13 +5,27 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-weight: bold;
-  margin: 0;
+  margin: 15px 0;
   padding: 0;
 }
 
 ol, ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+li {
+  &::before {
+    margin-right: 10px;
+    content: "\2022";
+    color: #FB6D3A;
+    font-size: 1.2em;
+  }
+}
+
+a {
+  transition: color .2s ease;
 }
 
 .main-container {

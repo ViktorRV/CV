@@ -3,30 +3,14 @@
   background: #1E2939;
   padding-top: 40px;
   letter-spacing: .5px;
-  
+
   a {
-    transition: color .2s ease;
-    &, &:active, &:visited {
-      color: #aaa;
-      text-decoration: none;
-    }
+    color: #ccc;
     &:hover {
       color: #FB6D3A;
     }
   }
   
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li::before {
-      content: "\2022";
-      color: #FB6D3A;
-      margin-right: 10px;
-      font-size: 1.2em;
-    }
-  }
-
   .portrait {
     overflow: hidden;
     background-image: url('../images/portrait.jpg');
