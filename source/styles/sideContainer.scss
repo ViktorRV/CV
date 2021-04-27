@@ -1,13 +1,27 @@
-.side-container {
-  min-width: 400px;
+.sidebar-container {
   background: #1E2939;
-  padding-top: 40px;
+  padding-top: 20px;
   letter-spacing: .5px;
+  @media screen and ($breakpointSmall) {
+    min-width: 400px;
+    padding-top: 40px;
+  }
 
   a {
     color: #ccc;
     &:hover {
-      color: #FB6D3A;
+      color: $orangeHighlight;
+    }
+  }
+
+  .sidebar-header-mobile {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    @media screen and ($breakpointSmall) {
+      display: none;
     }
   }
   
@@ -16,10 +30,13 @@
     background-image: url('../images/portrait.jpg');
     background-position: bottom;
     background-size: cover;
-    height: 450px;
+    height: 420px;
+    @media screen and ($breakpointMedium) {
+      height: 450px;
+    }
   }
   .sidebar-content-section {
-    padding: 30px;
+    padding: 20px;
     color: white;
     line-height: 1.5em;
 
@@ -34,6 +51,10 @@
     .sidebar-contacts-elem {
       display: grid;
       grid-template-columns: 1fr 3fr
+    }
+
+    @media screen and ($breakpointMedium) {
+      padding: 30px;
     }
   }
 }

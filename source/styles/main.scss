@@ -1,6 +1,9 @@
+@import "./variables.scss";
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -19,7 +22,7 @@ li {
   &::before {
     margin-right: 10px;
     content: "\2022";
-    color: #FB6D3A;
+    color: $orangeHighlight;
     font-size: 1.2em;
   }
 }
@@ -31,16 +34,24 @@ a {
 .main-container {
   box-sizing: border-box;
   max-width: 1280px;
-  margin: 20px auto;
-  padding: 40px;
   background-color: #F5F7FA;
+  @media screen and ($breakpointSmall) {
+    padding: 20px;
+  }
+  @media screen and ($breakpointMedium) {
+    margin: 20px auto;
+    padding: 40px;
+  }
 }
 
 .cv-container {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  @media screen and ($breakpointSmall){
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    
+  }
 }
 
 @import "./sideContainer.scss";
