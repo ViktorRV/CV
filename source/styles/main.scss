@@ -1,0 +1,62 @@
+@import "./variables.scss";
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  margin: 15px 0;
+  padding: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  &::before {
+    margin-right: 10px;
+    content: "\2022";
+    color: $orangeHighlight;
+    font-size: 1.2em;
+  }
+}
+
+a {
+  transition: color .2s ease;
+}
+
+.main-container {
+  box-sizing: border-box;
+  max-width: 1280px;
+  background-color: #F5F7FA;
+  @media screen and ($breakpointSmall) {
+    padding: 20px;
+  }
+  @media screen and ($breakpointMedium) {
+    margin: 20px auto;
+    padding: 40px;
+  }
+  @media print {
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+}
+
+.cv-container {
+  @media screen and ($breakpointSmall){
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@import "./sideContainer.scss";
+@import "./mainContentContainer.scss";
