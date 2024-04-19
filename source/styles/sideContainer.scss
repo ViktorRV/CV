@@ -6,6 +6,9 @@
     min-width: 330px;
     padding-top: 40px;
   }
+  @media screen and ($breakpointMedium) {
+    min-width: 400px;
+  }
 
   @media print {
     background-color: white;
