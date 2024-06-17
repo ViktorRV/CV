@@ -1,15 +1,21 @@
 @import "./variables.scss";
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: $defaultFontSize;
   margin: 0;
   padding: 0;
+  @media print {
+    font-size: $printFontSize;
+  }
 }
 
 h1, h2, h3, h4, h5 {
   font-weight: bold;
   margin: 15px 0;
   padding: 0;
+  @media print {
+    margin: 5px 0;
+  }
 }
 
 ol, ul {
@@ -23,12 +29,21 @@ li {
     margin-right: 10px;
     content: "\2022";
     color: $orangeHighlight;
-    font-size: 1.2em;
+    @media print {
+      color: $defaultBlackColor;
+    }
   }
 }
 
 a {
   transition: color .2s ease;
+  text-decoration: none;
+}
+
+p {
+  @media print {
+    margin: initial;
+  }
 }
 
 .main-container {
@@ -45,7 +60,7 @@ a {
   @media print {
     margin: 0;
     padding: 0;
-    color: black;
+    color: $defaultBlackColor;
   }
 }
 

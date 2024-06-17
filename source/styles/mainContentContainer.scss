@@ -1,18 +1,28 @@
 .cv-content-container {
   padding: 15px;
+  font-size: 1.2em;
+  line-height: 1.5em;
   
   h4, a {
     color: $orangeHighlight;
   }
+
+  a {
+    border-bottom: 1px solid $orangeHighlight;
+    &:hover {
+      color: $defaultWhiteColor;
+      border-bottom: 1px solid $defaultWhiteColor;
+    }
+    @media print {
+      border-bottom: none;
+    }
+  }
+  
   .about-me-section {
-    margin-bottom: 30px;
     .about-me-name {
       display: none;
       text-align: center;
-      font-size: 45px;
-      line-height: 55px;
       font-weight: bold;
-      margin-bottom: 15px;
       @media screen and ($breakpointSmall) {
         display: block;
       }
@@ -22,9 +32,6 @@
       display: none;
       font-weight: bold;
       text-align: center;
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 2em;
       text-transform: capitalize;
       @media screen and ($breakpointSmall) {
         display: block;
@@ -32,12 +39,10 @@
     }
     
     .about-me-description {
-      font-size: 1.2em;
-      line-height: 1.5em;
-      margin: 0;
       text-align: justify;
     }
   }
+
   @media screen and ($breakpointSmall) {
     width: 100%;
     padding: 40px;
@@ -50,12 +55,13 @@
   .work-experience-section,
   .education-section,
   .additional-info-section {
-    font-size: 1.2em;
+    margin-top: 10px;
   }
+
   .work-experience-section-header,
   .education-section-header,
   .additional-info-header {
-    font-size: 1.8em;
+    font-size: 1.2em;
     margin-bottom: 10px;
     font-weight: bold;
     @media screen and ($breakpointSmall) {
@@ -67,6 +73,9 @@
     font-size: .8em;
     line-height: 15px;
     color: $greyColor;
+    @media print {
+      color: $defaultBlackColor;
+    }
   }
   
   .workplace {
@@ -79,19 +88,15 @@
   
   .separator {
     margin: 0 7px;
-    color: black;
+    color: $defaultBlackColor;
   }
 
   @media print {
-    font-size: .9em;
-    color: initial;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: $defaultBlackColor;
     h4, a {
-      color: initial;
-    }
-    .work-experience-section-header,
-    .education-section-header,
-    .additional-info-header {
-      font-size: 1.2em;
+      color: $defaultBlackColor;
     }
   }
 }
