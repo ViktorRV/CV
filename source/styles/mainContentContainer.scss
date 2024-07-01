@@ -2,6 +2,7 @@
   padding: 15px;
   font-size: 1.2em;
   line-height: 1.5em;
+  position: relative;
   
   h4, a {
     color: $orangeHighlight;
@@ -15,6 +16,27 @@
     }
     @media print {
       border-bottom: none;
+    }
+  }
+
+  #print-btn {
+    display: none;
+    
+    @media screen and ($breakpointMedium) {
+      border-radius: 5px;
+      border: 1px solid $orangeHighlight;
+      cursor: pointer;
+      display: block;
+      font-size: $defaultFontSize;
+      padding: 7px;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      transition: all .2s ease;
+      &:hover {
+        background-color: $orangeHighlight;
+        color: $defaultWhiteColor;
+      }
     }
   }
   
