@@ -8,6 +8,7 @@ body {
 
   @media print {
     font-size: $printFontSize;
+    line-height: 1.2em;
   }
 }
 
