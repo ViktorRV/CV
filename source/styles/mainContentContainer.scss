@@ -33,7 +33,7 @@
       position: absolute;
       right: 15px;
       top: 15px;
-      transition: all 0.2s ease;
+      transition: $defaultAnimation;
       &:hover {
         background-color: $orangeHighlight;
         color: $defaultWhiteColor;
