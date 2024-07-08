@@ -1,24 +1,32 @@
 @import "./variables.scss";
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: $defaultFontSize;
   margin: 0;
   padding: 0;
+
   @media print {
     font-size: $printFontSize;
   }
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: bold;
   margin: 15px 0;
   padding: 0;
+
   @media print {
     margin: 5px 0;
   }
 }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -29,6 +37,7 @@ li {
     margin-right: 10px;
     content: "\2022";
     color: $orangeHighlight;
+
     @media print {
       color: $defaultBlackColor;
     }
@@ -36,7 +45,7 @@ li {
 }
 
 a {
-  transition: color .2s ease;
+  transition: color 0.2s ease;
   text-decoration: none;
 }
 
@@ -49,14 +58,17 @@ p {
 .main-container {
   box-sizing: border-box;
   max-width: 1280px;
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
+
   @media screen and ($breakpointSmall) {
     padding: 20px;
   }
+
   @media screen and ($breakpointMedium) {
     margin: 20px auto;
     padding: 40px;
   }
+
   @media print {
     margin: 0;
     padding: 0;
@@ -65,7 +77,7 @@ p {
 }
 
 .cv-container {
-  @media screen and ($breakpointSmall){
+  @media screen and ($breakpointSmall) {
     display: flex;
     flex-direction: row;
     background-color: #fff;

@@ -3,8 +3,9 @@
   font-size: 1.2em;
   line-height: 1.5em;
   position: relative;
-  
-  h4, a {
+
+  h4,
+  a {
     color: $orangeHighlight;
   }
 
@@ -21,7 +22,7 @@
 
   #print-btn {
     display: none;
-    
+
     @media screen and ($breakpointMedium) {
       border-radius: 5px;
       border: 1px solid $orangeHighlight;
@@ -32,14 +33,14 @@
       position: absolute;
       right: 15px;
       top: 15px;
-      transition: all .2s ease;
+      transition: all 0.2s ease;
       &:hover {
         background-color: $orangeHighlight;
         color: $defaultWhiteColor;
       }
     }
   }
-  
+
   .about-me-section {
     .about-me-name {
       display: none;
@@ -49,7 +50,7 @@
         display: block;
       }
     }
-    
+
     .about-me-profession {
       display: none;
       font-weight: bold;
@@ -59,7 +60,7 @@
         display: block;
       }
     }
-    
+
     .about-me-description {
       text-align: justify;
     }
@@ -90,24 +91,24 @@
       line-height: 2.2em;
     }
   }
-  
+
   .date {
-    font-size: .8em;
+    font-size: 0.8em;
     line-height: 15px;
     color: $greyColor;
     @media print {
       color: $defaultBlackColor;
     }
   }
-  
+
   .workplace {
     margin-bottom: 20px;
   }
-  
+
   .university {
     margin-bottom: 12px;
   }
-  
+
   .separator {
     margin: 0 7px;
     color: $defaultBlackColor;
@@ -117,9 +118,9 @@
     font-size: 1em;
     line-height: 1.2em;
     color: $defaultBlackColor;
-    h4, a {
+    h4,
+    a {
       color: $defaultBlackColor;
     }
   }
 }
-

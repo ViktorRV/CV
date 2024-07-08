@@ -1,7 +1,7 @@
 .sidebar-container {
   background: $sidebarBgColor;
   padding-top: 20px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   @media screen and ($breakpointSmall) {
     min-width: 330px;
     padding-top: 40px;
@@ -47,7 +47,6 @@
     }
   }
 
-
   .sidebar-header-mobile {
     color: white;
     margin-bottom: 20px;
@@ -60,14 +59,14 @@
       color: $defaultBlackColor;
     }
   }
-  
+
   .portrait {
     overflow: hidden;
-    background-image: url('../images/portrait.jpg');
+    background-image: url("../images/portrait.jpg");
     background-position: bottom;
     background-size: cover;
     height: 420px;
-    -webkit-print-color-adjust: exact; 
+    -webkit-print-color-adjust: exact;
     @media screen and ($breakpointMedium) {
       height: 450px;
     }
@@ -86,10 +85,9 @@
     .sidebar-contacts-elem {
       display: grid;
       grid-template-columns: 1fr 3fr;
-      margin-bottom: .2rem;
+      margin-bottom: 0.2rem;
     }
 
-    
     @media print {
       color: $defaultBlackColor;
       font-size: 1em;
