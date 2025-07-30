@@ -47,9 +47,7 @@ gulp.task("styles:compile", function () {
 /* ------------ JS ------------- */
 gulp.task("js", function () {
   return gulp
-    .src([
-      "source/js/scripts.js",
-    ])
+    .src(["source/js/scripts.js"])
     .pipe(sourcemaps.init())
     .pipe(concat("main.min.js"))
     .pipe(uglify())
@@ -92,8 +90,18 @@ gulp.task("copy:favicon", function () {
   return gulp.src("./source/*.ico").pipe(gulp.dest("dist/"));
 });
 
+/* ------------ Copy documents ------------- */
+gulp.task("copy:documents", function () {
+  return gulp
+    .src("./source/documents/**/*.*")
+    .pipe(gulp.dest("dist/documents"));
+});
+
 /* ------------ Copy ------------- */
-gulp.task("copy", gulp.parallel("copy:fonts", "copy:images", "copy:favicon"));
+gulp.task(
+  "copy",
+  gulp.parallel("copy:fonts", "copy:images", "copy:favicon", "copy:documents"),
+);
 
 /* ------------ Watchers ------------- */
 gulp.task("watch", function () {
