@@ -1,0 +1,26 @@
+.download-pdf {
+  background: url("/images/download-icon.png") no-repeat center center / cover;
+  border-bottom: none !important;
+  display: none;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+.desktop > .download-pdf {
+  @media screen and ($breakpointSmallest) {
+    display: block;
+  }
+}
+
+.mobile > .download-pdf {
+  display: block;
+  @media screen and ($breakpointSmallest) {
+    display: none;
+  }
+}
