@@ -20,27 +20,6 @@
     }
   }
 
-  #print-btn {
-    display: none;
-
-    @media screen and ($breakpointMedium) {
-      border-radius: 5px;
-      border: 1px solid $orangeHighlight;
-      cursor: pointer;
-      display: block;
-      font-size: $defaultFontSize;
-      padding: 7px;
-      position: absolute;
-      right: 15px;
-      top: 15px;
-      transition: $defaultAnimation;
-      &:hover {
-        background-color: $orangeHighlight;
-        color: $defaultWhiteColor;
-      }
-    }
-  }
-
   .about-me-section {
     .about-me-name {
       display: none;
